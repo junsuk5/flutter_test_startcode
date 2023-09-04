@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         color: Colors.red,
                       ),
                       onDismissed: (direction) {
-                        //チュートリアルではsetStateがないがこれを忘れるとDismiss時にRangeErrorになる
+                        // 튜토리얼에서는 이 코드가 없지만 이게 없으면 안 됨
                         setState(() {
                           todos.removeAt(index);
                         });
